@@ -21,7 +21,7 @@ export const canParse = (html: string) => {
   );
 };
 
-const getNodeData = ($: CheerioStatic, node: CheerioElement) => {
+const getNodeData = ($: any, node: any) => {
   const data: Bookmark = {};
 
   for (let i = 0; i < node.childNodes.length; i++) {
@@ -79,7 +79,7 @@ const getNodeData = ($: CheerioStatic, node: CheerioElement) => {
   return data;
 };
 
-const processDir = ($: CheerioStatic, dir: any, level: number) => {
+const processDir = ($: any, dir: any, level: number) => {
   const children = dir.childNodes;
   let menuRoot: Bookmark = null;
 
